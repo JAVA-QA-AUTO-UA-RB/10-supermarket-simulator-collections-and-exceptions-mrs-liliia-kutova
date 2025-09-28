@@ -22,7 +22,7 @@ public class ProductInventory {
         }
 
         public List<String> getProducts(){
-            return new ArrayList<>(products);
+            return products;
         }
     }
 
