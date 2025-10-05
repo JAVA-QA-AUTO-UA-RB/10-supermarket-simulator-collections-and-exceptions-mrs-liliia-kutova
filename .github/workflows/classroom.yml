@@ -23,8 +23,8 @@ jobs:
 
       - name: Compile and run SupermarketSimulator
         run: |
-          javac main/java/SupermarketSimulator.java
-          java -cp main/java SupermarketSimulator
+          javac src/main/java/SupermarketSimulator.java
+          java -cp src/main/java SupermarketSimulator
         continue-on-error: false
 
       - name: Check exit code
