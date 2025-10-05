@@ -14,9 +14,9 @@ public class SupermarketSimulator {
         PriceCatalog prices = new PriceCatalog();
         StockManager stock = new StockManager();
         ShoppingCart cart = new ShoppingCart();
-//
+
         try {
-//            // Імітація дій
+            // Імітація дій
             inventory.addProduct("Apple");
             inventory.addProduct("Bread");
             inventory.addProduct("Milk");
@@ -28,18 +28,18 @@ public class SupermarketSimulator {
             stock.addStock("Apple", 10);
             stock.addStock("Bread", 5);
             stock.addStock("Milk", 3);
-//
-//            // Покупки
+
+            // Покупки
             cart.addToCart("Apple");
             stock.reduceStock("Apple");
             cart.addToCart("Milk");
             stock.reduceStock("Milk");
-//
-//            // Чек
+
+            // Чек
             double payment = 5.0; // Імітація оплати
             cart.checkout(prices, payment);
-//
-//            // Сортування та вивід
+
+            // Сортування та вивід
             inventory.sortProducts();
             System.out.println("Товари: " + inventory.getProducts());
             System.out.println("Категорії: " + categories.getCategories());

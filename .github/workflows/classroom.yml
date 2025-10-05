@@ -24,7 +24,7 @@ jobs:
       - name: Compile and run SupermarketSimulator
         run: |
           javac src/main/java/SupermarketSimulator.java
-          java -cp src/main/java SupermarketSimulator
+          java -cp src main.java.SupermarketSimulator
         continue-on-error: false
 
       - name: Check exit code
